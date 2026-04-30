@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody rb;
     private float moveDirection;
     private float yRotation = 0f;
-    private int sensitivity = 50;
+    private int sensitivity = 30;
 
     void Start()
     {
@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         rb = GetComponent<Rigidbody>();
     }
-    //To stay on the ground
+    //To stay on the ground || NEED TO MAKE SURE IM TOUCHING A FLOOR LAYER ONCOLISSIONENTER(COLLIDER FLOOR)
     void OnCollisionStay()
     {
         isGrounded = true;
@@ -46,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
         {
             yRotation += mouseDelta.x * sensitivity * Time.deltaTime;
             transform.localRotation = Quaternion.Euler(0, yRotation, 0);
+            Debug.Log(transform.localRotation.y);
         }
 
 

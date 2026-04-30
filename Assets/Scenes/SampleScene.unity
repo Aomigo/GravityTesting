@@ -6034,6 +6034,7 @@ GameObject:
   - component: {fileID: 1819286929}
   - component: {fileID: 1819286934}
   - component: {fileID: 1819286935}
+  - component: {fileID: 1819286936}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -6143,14 +6144,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1819286928}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.689291, z: -0, w: 0.7244846}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 96.933, y: 3.608, z: 56.035995}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 330585546}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -87.148, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!96 &1819286934
 TrailRenderer:
   serializedVersion: 4
@@ -6288,6 +6289,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &1819286936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819286928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2bcc00448226a84f834e0f7c0997381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraRotation
+  rSpeed: 10
+  player: {fileID: 1819286928}
 --- !u!1 &1947304145
 GameObject:
   m_ObjectHideFlags: 0
