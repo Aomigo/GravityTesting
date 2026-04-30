@@ -6301,8 +6301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2bcc00448226a84f834e0f7c0997381, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraRotation
-  rSpeed: 10
-  player: {fileID: 1819286928}
+  rSpeed: 5
 --- !u!1 &1947304145
 GameObject:
   m_ObjectHideFlags: 0
