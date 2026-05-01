@@ -41,13 +41,14 @@ public class PlayerMovement : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
         }
         //move around the x axis
-        Vector2 mouseDelta = Mouse.current.delta.ReadValue();
+        //REMOVED FOR THE ORBIT CAMERA
+        /*Vector2 mouseDelta = Mouse.current.delta.ReadValue();
         if (mouseDelta.magnitude > 0)
         {
             yRotation += mouseDelta.x * sensitivity * Time.deltaTime;
             transform.localRotation = Quaternion.Euler(0, yRotation, 0);
             Debug.Log(transform.localRotation.y);
-        }
+        }*/
 
 
 
@@ -72,6 +73,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 moveDirection = new Vector3(x, 0, z);
         //Update the GameObject's position with the detected move direction and speed.
         transform.Translate(moveDirection * speed * Time.deltaTime);
+        /* Not bad rb.AddForce(moveDirection * (speed / 10), ForceMode.Impulse);*/
 
         //To jump
         if(keyboard.spaceKey.wasPressedThisFrame && isGrounded)
