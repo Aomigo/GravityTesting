@@ -6571,7 +6571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf091568e2fa0874fb928237191a93e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  moveSpeed: 2
+  moveSpeed: 3
   sprintSpeed: 5
   jumpForce: 5
   isGrounded: 0
@@ -6734,6 +6734,7 @@ MonoBehaviour:
   focus: {fileID: 4731188191505382128}
   distance: 2.5
   focusRadius: 1.5
+  focusCentering: 0.75
 --- !u!1 &7645702500714988809
 GameObject:
   m_ObjectHideFlags: 0
