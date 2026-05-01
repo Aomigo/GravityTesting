@@ -6358,7 +6358,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7645702500714988809}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2bcc00448226a84f834e0f7c0997381, type: 3}
   m_Name: 
@@ -6499,8 +6499,8 @@ TrailRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: 0.11289024
+        time: 1
+        value: 0.14146233
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -6571,8 +6571,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf091568e2fa0874fb928237191a93e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  moveSpeed: 5
-  sprintSpeed: 10
+  moveSpeed: 2
+  sprintSpeed: 5
   jumpForce: 5
   isGrounded: 0
 --- !u!20 &6879692880845750818
