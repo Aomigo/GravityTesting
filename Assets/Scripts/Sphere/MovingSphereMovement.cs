@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class MovingSphere : MonoBehaviour
+public class MovingSphereMovement : MonoBehaviour
 {
 
     [SerializeField, Range(0f, 100f)]
